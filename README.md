@@ -10,4 +10,5 @@ pip install python-lsp-server
 pip install -U setuptools
 npm install -g pyright
 pip install 'python-lsp-server[all]'
+git clone https://github.com/junegunn/vim-plug (and install)
 ```
