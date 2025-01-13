@@ -1,3 +1,9 @@
+# Lua-based NeoVIM Configurations
+
+## Notes
+to-do
+
+## Old
 ```
 sudo apt update
 sudo apt install nodejs
