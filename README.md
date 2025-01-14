@@ -1,11 +1,16 @@
 # Lua-based NeoVIM Configurations
 
 ## dependencies
+
+### gihub
+- NVIM (>= 0.10.0): https://github.com/neovim/neovim/releases
+- font: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/JetBrainsMono.zip
+- fzf: https://github.com/junegunn/fzf
+
+### apt
 ```
-NVIM (>= 0.10.0): https://github.com/neovim/neovim/releases
-font: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/JetBrainsMono.zip
 apt install lua5.4 liblua5.4-dev
-apt install fzf
+apt install ripgrep
 ```
 
 ## Old
