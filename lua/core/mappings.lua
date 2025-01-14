@@ -19,8 +19,6 @@ vim.keymap.set('n', '<c-l>', ':wincmd l<CR>')
 
 -- NeoTree
 vim.keymap.set('n', '<leader>t', ':Neotree left reveal toggle<CR>')
--- vim.keymap.set('n', '<leader>e', ':Neotree float focus<CR>')
--- vim.keymap.set('n', '<leader>o', ':Neotree float git_status<CR>')
 
 --Tabs
 vim.keymap.set('n', '<Tab>', ':BufferLineCycleNext<CR>')
