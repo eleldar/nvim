@@ -3,7 +3,10 @@ return {
 		'neovim/nvim-lspconfig',
 		config = function()
 			local lspconfig = require('lspconfig')
-			lspconfig.pyright.setup({})
+			local capabilities = require('cmp_nvim_lsp').default_capabilities()
+			lspconfig.pyright.setup({
+				capabilities = capabilities
+			})
 			lspconfig.lua_ls.setup({})
 			lspconfig.ts_ls.setup({})
 			vim.api.nvim_create_autocmd("LspAttach", {
@@ -18,7 +21,7 @@ return {
 					vim.keymap.set("n", "<Leader>D", vim.lsp.buf.type_definition, opts)
 					vim.keymap.set("n", "<Leader>lr", vim.lsp.buf.rename, { buffer = ev.buf, desc = "Rename Symbol" })
 					vim.keymap.set({ "n", "v" }, "<Leader>la", vim.lsp.buf.code_action, opts)
-					vim.keymap.set("n", "<Leader>lf", function() 
+					vim.keymap.set("n", "<Leader>lf", function()
 						vim.lsp.buf.format({ async = true })
 					end, opts)
 				end,
