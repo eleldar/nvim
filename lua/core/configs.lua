@@ -32,5 +32,5 @@ vim.opt.fillchars = {
 	msgsep = "‾",
 	foldopen = "▾",
 	foldsep = "│",
-	foldclose = "▸"
+	foldclose = "▸",
 }

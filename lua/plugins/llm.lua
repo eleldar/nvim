@@ -1,13 +1,13 @@
 return {
-	'huggingface/llm.nvim',
+	"huggingface/llm.nvim",
 	-- keys = { { '<c-j>', function() require('llm.completion').complete() end, mode = 'i', desc = 'complete' } },
 	enabled = false,
 	config = function()
-		require('llm').setup({
+		require("llm").setup({
 			api_token = nil,
 			model = "codellama:7b",
 			backend = "ollama",
-			url = os.getenv('OLLAMA_API_URL'),
+			url = os.getenv("OLLAMA_API_URL"),
 			tokens_to_clear = { "<EOT>" },
 			request_body = {
 				parameters = {
@@ -36,7 +36,7 @@ return {
 			context_window = 1024,
 			enable_suggestions_on_startup = true,
 			enable_suggestions_on_files = "*",
-			disable_url_path_completion = false
+			disable_url_path_completion = false,
 		})
-	end
+	end,
 }
