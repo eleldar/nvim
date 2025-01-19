@@ -5,7 +5,7 @@ vim.g.mapleader = " "
 vim.keymap.set("i", "jj", "<Esc>")
 
 -- Buffers
-vim.keymap.set("n", "<leader>w", ":w<CR>")
+vim.keymap.set("n", "<leader>w", ":w<CR>", { desc = "Save File" })
 
 -- Splits
 vim.keymap.set("n", "|", ":vsplit<CR>")

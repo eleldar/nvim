@@ -34,10 +34,10 @@ return {
 			gen.prompts.Test = {
 				prompt = "Create OOP-based tests for this code\n$text",
 			}
-			vim.keymap.set({ "n", "v" }, "<leader>m", ":Gen<CR>")
+			vim.keymap.set({ "n", "v" }, "<leader>m", ":Gen<CR>", { desc = "LLM Tasks" })
 			vim.keymap.set({ "n" }, "<leader>mm", function()
 				gen.select_model()
-			end)
+			end, { desc = "Choose LLM" })
 		end,
 	},
 }
