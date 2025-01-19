@@ -5,7 +5,7 @@ return {
 		conform.setup({
 			formatters_by_ft = {
 				lua = { "stylua" },
-				python = { "isort", "black", "autoflake" },
+				python = { "isort", "black", "autoflake", "docformatter", "autopep8" },
 			},
 		})
 		vim.api.nvim_create_autocmd("BufWritePre", {
