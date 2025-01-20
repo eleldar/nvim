@@ -27,7 +27,7 @@ return {
 						icon = "󰊳 ",
 						desc = "Text",
 						group = "Number",
-						action = "Telescope live grep",
+						action = "Telescope live_grep",
 						key = "t",
 					},
 					{

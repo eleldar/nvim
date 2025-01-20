@@ -1,6 +1,6 @@
-# Lua-based NeoVIM Configurations
+# NeoVIM Configurations
 
-## dependencies
+## Install
 
 ### gihub
 - NVIM (>= 0.10.0): https://github.com/neovim/neovim/releases
@@ -23,18 +23,7 @@ pip install 'python-lsp-server[all]'
 echo '{ "venvPath": ".", "venv": "venv" }' >> pyrightconfig.json
 ```
 
-## Old
-```
-sudo apt update
-sudo apt install nodejs
-wget https://github.com/neovim/neovim/releases/download/v0.10.0/nvim-linux64.tar.gz
-tar xzvf nvim-linux64.tar.gz
-./nvim-linux64/bin/nvim
-
-python3 -m pip install -U mypy
-pip install python-lsp-server
-pip install -U setuptools
-npm install -g pyright
-pip install 'python-lsp-server[all]'
-git clone https://github.com/junegunn/vim-plug (and install)
-```
+## Using
+- Copilot: ``
+- Gen: ``
+- LLM: ``
