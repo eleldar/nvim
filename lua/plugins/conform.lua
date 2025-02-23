@@ -5,7 +5,13 @@ return {
 		conform.setup({
 			formatters_by_ft = {
 				lua = { "stylua" },
-				python = { "isort", "black", "autoflake", "docformatter", "autopep8" },
+				python = { "isort", "black" },
+				--javascript = { "prettierd", stop_after_first = true },
+			},
+			formatters = {
+				black = {
+					prepend_args = { "--line-length", "120" },
+				},
 			},
 		})
 		vim.api.nvim_create_autocmd("BufWritePre", {
