@@ -6,7 +6,7 @@ return {
 			formatters_by_ft = {
 				lua = { "stylua" },
 				python = { "isort", "black" },
-				--javascript = { "prettierd", stop_after_first = true },
+				javascript = { "prettierd", stop_after_first = true },
 			},
 			formatters = {
 				black = {
