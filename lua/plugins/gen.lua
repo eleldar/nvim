@@ -13,7 +13,7 @@ return {
 				protocol, url = env:match("(.*)://(.*)")
 				host, port = url:match("(.*):(.*)")
 				gen.setup({
-					model = "llama3.2:3b-instruct-fp16", -- The default model to use.
+					model = "qwen2.5-coder:32b-instruct-q8_0", -- The default model to use.
 					display_mode = "split", -- The display mode. Can be "float" or "split" or "horizontal-split".
 					show_prompt = true, -- Shows the prompt submitted to Ollama. Can be true (3 lines) or "full".
 					show_model = true, -- Displays which model you are using at the beginning of your chat session.
@@ -43,7 +43,7 @@ return {
 					prompt = "```$filetype\n$text\n```Create OOP-based tests with pytest for the code.",
 				}
 				gen.prompts.RewriteToPython = {
-					prompt = "```$filetype\n$text\n```Rewrite the code to Python code.",
+					prompt = "```$filetype\n$text\n```Rewrite the code to Python code. For RESTful API routes use only FastAPI.",
 				}
 				vim.keymap.set({ "n", "v" }, "<leader>m", ":Gen<CR>", { desc = "LLM Tasks" })
 				vim.keymap.set({ "n" }, "<leader>mm", function()
