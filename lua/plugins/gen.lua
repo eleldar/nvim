@@ -13,7 +13,7 @@ return {
 				protocol, url = env:match("(.*)://(.*)")
 				host, port = url:match("(.*):(.*)")
 				gen.setup({
-					model = "qwen2.5-coder:32b-instruct-q8_0", -- The default model to use.
+					model = "deepseek-r1:70b-llama-distill-q8_0", -- "qwen2.5-coder:32b-instruct-q8_0", -- The default model to use.
 					display_mode = "split", -- The display mode. Can be "float" or "split" or "horizontal-split".
 					show_prompt = true, -- Shows the prompt submitted to Ollama. Can be true (3 lines) or "full".
 					show_model = true, -- Displays which model you are using at the beginning of your chat session.
@@ -30,7 +30,7 @@ return {
 				gen.prompts.Translate = {
 					prompt = "```$text```\nTranslate into Russian the text.",
 				}
-				gen.prompts.ReviewCode = {
+				gen.prompts.Review_Code = {
 					prompt = "```$filetype\n$text\n```Review in Russian the code.",
 				}
 				gen.prompts.ExplainCode = {

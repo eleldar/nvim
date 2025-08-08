@@ -1,6 +1,7 @@
 return {
 	{
 		"neovim/nvim-lspconfig",
+		enabled = true,
 		config = function()
 			local lspconfig = require("lspconfig")
 			lspconfig.pyright.setup({
