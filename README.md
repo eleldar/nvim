@@ -3,27 +3,26 @@
 ## Install
 
 ### gihub
-- NVIM (>= 0.10.0): https://github.com/neovim/neovim/releases
+- NVIM (>= 0.10.0): https://github.com/neovim/neovim/releases:
+  - `wget https://github.com/neovim/neovim/releases/download/v0.11.3/nvim-linux-x86_64.tar.gz`
+  - `tar xzvf nvim-linux-x86_64.tar.gz`
+  - `sudo mv nvim-linux-x86_64 /opt/nvim`
+  - `sudo ln -s /opt/nvim/bin/nvim /usr/local/bin/nvim`
 - font: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.3.0/JetBrainsMono.zip
-- fzf: https://github.com/junegunn/fzf
 
-### apt
+### packages
 ```
-apt install lua5.4 liblua5.4-dev
-apt install ripgrep
-python3 -m pip install -U mypy
-pip install python-lsp-server
+sudo apt install fzf ripgrep nodejs npm python3-pip python3.12-venv lua5.4 liblua5.4-dev
+sudo npm install -g pyright
 pip install -U setuptools
-npm install -g pyright
-pip install 'python-lsp-server[all]'
 ```
 
 ### python
 ```
-echo '{ "venvPath": ".", "venv": "venv" }' >> pyrightconfig.json
+echo '{ "venvPath": ".", "venv": ".venv" }' >> pyrightconfig.json
 ```
 
 ## Using
-- Copilot: ``
-- Gen: ``
-- LLM: ``
+- Copilot: `to-do`
+- Gen: `to-do`
+- LLM: `to-do`
