@@ -1,13 +1,13 @@
 return {
 	"huggingface/llm.nvim",
 	-- keys = { { '<c-j>', function() require('llm.completion').complete() end, mode = 'i', desc = 'complete' } },
-	enabled = false,
+	enabled = true,
 	config = function()
 		require("llm").setup({
-			api_token = "EMPTY",
-			model = "google/gemma-3-27b-it",
-			backend = "openai",
+			model = os.getenv("OPENAI_API_MODEL"),
+			api_token = os.getenv("OPENAI_API_KEY"),
 			url = os.getenv("OPENAI_API_HOST"),
+			backend = "openai",
 			request_body = {
 				parameters = {
 					temperature = 0.2,
