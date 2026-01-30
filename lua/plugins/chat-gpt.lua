@@ -1,7 +1,7 @@
 return {
 	"huggingface/llm.nvim",
 	-- keys = { { '<c-j>', function() require('llm.completion').complete() end, mode = 'i', desc = 'complete' } },
-	enabled = true,
+	enabled = false,
 	config = function()
 		require("llm").setup({
 			model = os.getenv("OPENAI_API_MODEL"),

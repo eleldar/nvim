@@ -1,6 +1,6 @@
 return {
 	"eleldar/Gemma.nvim",
-	enabled = true,
+	enabled = false,
 	config = function()
 		require("chatgpt").setup({
 			-- this config assumes you have OPENAI_API_KEY environment variable set

@@ -2,7 +2,7 @@ return {
 	{
 		"David-Kunz/gen.nvim",
 		-- Custom Parameters (with defaults)
-		enabled = true,
+		enabled = false,
 		config = function()
 			local gen = require("gen")
 			local protocol
