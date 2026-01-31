@@ -13,6 +13,7 @@
 ### packages
 ```
 sudo apt install fzf ripgrep nodejs npm python3-pip python3.12-venv lua5.4 liblua5.4-dev
+sudo apt install mypy flake8 black
 sudo npm install -g pyright
 pip install -U setuptools
 ```
